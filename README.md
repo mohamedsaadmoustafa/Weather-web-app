@@ -9,7 +9,7 @@ You can create an .env file and add your API key there.
 
 ![env](images/env.png)
 
-## 
+## Directory tree
 ```
 web-weather-app
 ├── assets
