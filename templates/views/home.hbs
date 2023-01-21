@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{title}}</title>
+    <link href="css/site.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/404.css">
+    <link href="css/home.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icons/astronaut.svg">
+  </head>
+  <body class="permission_denied">
+    <main class="main-container"></main>
+      <div id="tsparticles">
+        <canvas data-generated="true" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 0 !important; top: 0px !important; left: 0px !important; pointer-events: initial;" width="1351" height="672">
+        </canvas>
+      </div>
+
+      <div class="denied__wrapper">
+            <section class="top-banner">
+            <div class="container">
+              <h1 class="heading">{{title}}!</h1>
+              <h3>Get weather data by entering a city name.</h3>
+              <form class="" action="/weather" method="POST">
+                <input name="name" type="text" value="" placeholder="Search for a city" autofocus>
+                <input type="submit" ></input>
+              </form>
+            </div>
+          </section>
+          <img id="astronaut" src="icons/astronaut.svg">
+          <img id="planet" src="icons/planet.svg">
+      </div>
+
+      <script type="text/javascript" src="js/tsparticles.bundle.min.js"></script>
+      <script type="text/javascript" src="js/404.js"></script>
+
+      <div id="speechify-global-notifications"></div>
+      <div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"></div>
+      <div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 2147483640; display: none;">
+    </div>
+    </main>
+  </body>
+</html>

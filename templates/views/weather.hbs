@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <link href="css/site.css" rel="stylesheet">
+  <link href="css/weather.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="icons/astronaut.svg">
+</head>
+<body>
+<main class="main-container">
+  <div class="location-and-date">
+    <h1 class="location-and-date__location">{{place}}</h1>
+    <div>{{now_weather.today_date}}</div>
+  </div>
+
+  <div class="current-temperature">
+    <div class="current-temperature__icon-container">
+      <img src="icons/256/{{now_weather.icon}}.png" class="current-temperature__icon" alt="">
+    </div>
+    <div class="current-temperature__content-container">
+      <div class="current-temperature__value">{{now_weather.temp}}&deg;</div>
+      <div class="current-temperature__summary">{{now_weather.description}}</div>
+    </div>
+  </div>
+
+  <div class="current-stats">
+    <div>
+      <div class="current-stats__value">{{now_weather.temp_min}}&deg;</div>
+      <div class="current-stats__label">Low</div>
+      <div class="current-stats__value">{{now_weather.temp_max}}&deg;</div>
+      <div class="current-stats__label">High</div>
+    </div>
+    <div>
+      <div class="current-stats__value">{{now_weather.feels_like}}&deg;</div>
+      <div class="current-stats__label">Feels Like</div>
+      <div class="current-stats__value">{{now_weather.visibility}}km</div>
+      <div class="current-stats__label">Visibility</div>
+    </div>
+    <div>
+      <div class="current-stats__value">{{now_weather.pressure}}hPa</div>
+      <div class="current-stats__label">Pressure</div>
+      <div class="current-stats__value">{{now_weather.clouds}}&#37</div>
+      <div class="current-stats__label">Clouds</div>
+    </div>
+    <div>
+      <div class="current-stats__value">{{now_weather.humidity}}&#37</div>
+      <div class="current-stats__label">Humidity</div>
+      <div class="current-stats__value">{{now_weather.wind_speed}}km/h</div>
+      <div class="current-stats__label">Wind Speed</div>
+    </div>
+  </div>
+
+  <div class="weather-by-hour">
+    <h2 class="weather-by-hour__heading">Next Hours</h2>
+    <div class="weather-by-hour__container">
+
+      <!-- for loop -->
+      {{#each today_weather}}
+      <div class="weather-by-hour__item">
+        <div class="weather-by-hour__hour">{{date}}:00</div>
+        <img src="icons/64/{{icon}}.png" alt="Mostly sunny">
+        <div>{{temp}}&deg;</div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="next-5-days">
+    <h2 class="next-5-days__heading">Next 4 days</h2>
+    <div class="next-5-days__container">
+
+      <!-- loop for nex days -->
+      {{#each next_weather}}
+      <div class="next-5-days__row">
+        <div class="next-5-days__date">
+          {{day}}
+          <div class="next-5-days__label">{{date}}</div>
+        </div>
+        <div class="next-5-days__low">
+          {{temp_min}}&deg;
+          <div class="next-5-days__label">Low</div>
+        </div>
+        <div class="next-5-days__high">
+          {{temp_max}}&deg;
+          <div class="next-5-days__label">High</div>
+        </div>
+        <div class="next-5-days__icon">
+          <img src="icons/64/{{icon}}.png" alt="Sunny">
+        </div>
+        <div class="next-5-days__rain">
+          {{humidity}}&#37
+          <div class="next-5-days__label">Humidity</div>
+        </div>
+        <div class="next-5-days__wind">
+          {{wind_speed}}km/h
+          <div class="next-5-days__label">Wind</div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="js/tsparticles.bundle.min.js"></script>
+<script type="text/javascript" src="js/404.js"></script>
+</body>
+</html>

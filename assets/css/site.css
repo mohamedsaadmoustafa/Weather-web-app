@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 12px;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  height: 100%;
+  background: #24344c !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    margin: 20px;
+  }
+}
+
+.main-container {
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 920px) {
+  .main-container {
+    width: 880px;
+    margin: 8px auto;
+    font-size: 1.1em;
+  }
+}
+
+
+#tsparticles {
+    position: fixed !important;
+    opacity: 0.23;
+}
+
+.main-container .stars {
+  animation: sparkle 1.6s infinite ease-in-out alternate;
+}
+
+@keyframes sparkle {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.3;
+  }
+}
