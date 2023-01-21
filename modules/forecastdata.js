@@ -20,15 +20,3 @@ module.exports = (cityName, callback) => {
     }
   })
 }
-// Weather web app with OpenWeatherMap API
-/*
-Weather Website using Node.js, Express, and OpenWeatherMap's API
-
-Simple weather app
-Getting started
-To use this app, you need to register
-an API Key on the OpenWeatherApp service.
-
-You can create an application-secrets.properties
-in src/main/resources and add your API key there:
-*/
