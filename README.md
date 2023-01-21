@@ -10,7 +10,7 @@ You can create an .env file and add your API key there.
 ![env](images/env.png)
 
 ## 
-'''
+```
 web-weather-app
 ├── assets
 │   ├── css
@@ -51,7 +51,7 @@ web-weather-app
     └── today_weather.js
 
 12 directories, 63 files
-'''
+```
 
 ## Screenshots
 ![home](images/home.png)
