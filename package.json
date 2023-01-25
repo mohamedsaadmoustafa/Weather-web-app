@@ -1,0 +1,11 @@
+{
+  "name": "Weather-web-app-express-mongo",
+  "version": "1.0.0",
+  "description": "Weather web app using Node.js, Express, and OpenWeatherMap's API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "author": "m9",
+  "license": "ISC"
+}
