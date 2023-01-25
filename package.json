@@ -5,8 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "build": "netlify-lambda build express",
-    "start": "node src/server-localer.js"
-    "start:dev": "nodemon src/server-localer.js"
+    "start": "nodemon src/server-localer.js"
   },
   "repository": {
     "type": "git",
