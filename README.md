@@ -1,3 +1,5 @@
+[![Weather web app](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://weather-render-kufc.onrender.com/)
+
 # Weather-web-app
 Weather web app using Node.js, Express, and OpenWeatherMap's API
 
