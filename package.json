@@ -2,7 +2,7 @@
   "name": "Weather-web-app-express-mongo",
   "version": "0.0.1",
   "description": "Weather web app using Node.js, Express, and OpenWeatherMap's API",
-  "main": "src/server.js",
+  "main": "src/server-local.js",
   "scripts": {
     "build": "netlify-lambda build express",
     "start": "nodemon src/server-local.js"
@@ -35,7 +35,7 @@
     "body-parser": "^1.20.1",
     "ip": "^1.1.8",
     "strftime": "^0.10.1",
-    "request": "^2.88.2", 
+    "request": "^2.88.2",
     "netlify-lambda": "^2.0.15",
     "nodemon": "^2.0.20",
     "serverless-http": "^3.1.1"
