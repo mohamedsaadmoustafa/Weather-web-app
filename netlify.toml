@@ -1,6 +1,2 @@
 [build]
   functions = "functions"
-[[redirects]]
-  from = "/*"
-  to = "/weather?address=cairo"
-  status = 200
