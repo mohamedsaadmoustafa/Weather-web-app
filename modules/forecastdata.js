@@ -1,10 +1,9 @@
+require('dotenv').config();
 const request = require('request');
 // access hidden keys in the .env file.
 const dotenv = require('dotenv');
 
-const result = dotenv.config()
-if (result.error) throw result.error;
-API_KEY = result.parsed.API_KEY
+const API_KEY = process.env.API_KEY;
 var BASE_URL = 'https://api.openweathermap.org/data/2.5/forecast'
 
 module.exports = (cityName, callback) => {
