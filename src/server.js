@@ -3,6 +3,7 @@ const request = require('express/lib/request');
 const hbs = require('hbs');
 const path = require('path');
 const bodyParser = require('body-parser');
+const serverless = require('serverless-http');
 
 // time now
 const time = new Date().toLocaleTimeString();
@@ -42,8 +43,6 @@ app.get('/api', require('../modules/api.js'))
 // route if a page does not exist (404)
 app.get('*', require('../modules/404.js'))
 
-// running server on port
-app.listen(port, () => {
-  console.log('Server is up and running on port: ', port)
-});
-
+// export app
+module.exports = app;
+module.exports.handler = serverless(app);
