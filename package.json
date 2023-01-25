@@ -4,7 +4,6 @@
   "description": "Weather web app using Node.js, Express, and OpenWeatherMap's API",
   "main": "src/server-local.js",
   "scripts": {
-    "build": "netlify-lambda build express",
     "start": "nodemon src/server-local.js"
   },
   "repository": {
@@ -12,7 +11,6 @@
     "url": "git+https://github.com/mohamedsaadmoustafa/Weather-web-app.git"
   },
   "keywords": [
-    "netlify",
     "express.js"
   ],
   "homepage": "https://github.com/neverendingqs/Weather-web-app#readme",
