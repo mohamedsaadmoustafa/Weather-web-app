@@ -2,7 +2,9 @@
 
 # Weather-web-app
 Weather web app using Node.js, Express, and OpenWeatherMap's API
-link: 
+
+## Deployed Wep App: 
+
 [![Weather web app](https://img.shields.io/badge/render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://weather-render-kufc.onrender.com/)
 
 ## Getting started
@@ -39,7 +41,8 @@ web-weather-app
 │   └── weather.js
 ├── Package.json
 ├── src
-│   └── server.js
+│   ├── server.js
+│   └── server-local.js
 ├── templates
 │   ├── partials
 │   └── views
