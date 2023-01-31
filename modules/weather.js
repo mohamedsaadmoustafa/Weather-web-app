@@ -17,10 +17,10 @@ module.exports = function (req, res) {
       // today weather
       today_weather = Today_weather(data.slice(1, -32))
       // next 4 days weather
-      first_weather = Next_weather(data.slice(-9, -1))
-      second_weather = Next_weather(data.slice(-17, -9))
-      third_weather = Next_weather(data.slice(-25, -17))
-      fourth_weather = Next_weather(data.slice(-33, -25))
+      fourth_weather = Next_weather(data.slice(-9, -1))
+      third_weather = Next_weather(data.slice(-17, -9))
+      second_weather = Next_weather(data.slice(-25, -17))
+      first_weather = Next_weather(data.slice(-33, -25))
       //last_weather = data.slice(-1) // ignore
 
       render_data = {
